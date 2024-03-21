@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size : 4.5rem;
+    background: #f2f2f2;
+    font-family: "Poppins" , sans-serif;
+}
+
+h3{
+    color : blue ; 
+    text-shadow: 2px 2px 14px orange;
+}
+
+#target {
+    display: flex;
+     margin-left :1.1rem; 
+     position : relative ;
+}
+
+#target::after{
+    content : "" ; 
+    position : absolute ; 
+    height: 2rem;
+    animation : anim 4s linear infinite ; 
+    width: 5px;
+    background: black;
+    top: 0;
+    transform: translateY(-4px);
+    right: -5px;
+  
+}
+
+@keyframes anim {
+    50% { 
+        opacitty : 0.1; 
+    }
+    100%  {
+        opacity : 1; 
+    }
+}
